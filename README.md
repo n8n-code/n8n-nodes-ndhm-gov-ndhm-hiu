@@ -53,15 +53,79 @@ That's it. No configuration files. No code. It just works.
 
 ## Resources
 
-| Resource | Operations |
-|----------|------------|
-| User Auth | Post notification api in case of direct mode of authentication by the cm, Post callback api for authconfirm in case of mediated auth to confirm user authentication or not, Post identification result for a consentmanager userid, Post response to user authentication initialization from hip |
-| Identification | Post identification result for a consentmanager userid |
-| Consent Flow | Post response to consent request, Post result of consent request status, Post consent notification, Post result of fetch request for a consent artefact |
-| Data Flow | Post health information data request, Post health information transfer api |
-| Subscriptions | Post notification for subscription grantdenyrevoke, Post callback api for the subscriptionrequestscminit to notify a hiu on acceptanceacknowledgement of the request for subscription, Post notification to hiu on basis of a granted subscription |
-| Monitoring | Get consent request status |
-| Gateway | Get openid configuration, Get certs for jwt verification, Post create consent request, Post get consent request status, Post get consent artefact, Post consent notification, Post health information data request, Post notifications corresponding to events during data flow, Post identify a patient by her consentmanager userid, Post get access token, Post request for subscription, Post callback api for subscriptionrequestshiunotify to acknowledge receipt of notification, Post callback api for subscriptionshiunotify to acknowledge receipt of notification, Post confirmation request sending token otp or other authentication details from hiphiu for confirmation, Post get a patients authentication modes relevant to specified purpose, Post initialize authentication from hip, Post callback api by hiuhips as acknowledgement of auth notification |
+<details>
+<summary><b>User Auth</b> (4 operations)</summary>
+
+- Post notification API in case of DIRECT mode of authentication by the CM
+- Post callback API for auth confirm in case of MEDIATED auth to confirm user authentication or not
+- Post Identification result for a consent manager user ID
+- Post Response to user authentication initialization from HIP
+
+</details>
+
+<details>
+<summary><b>Identification</b> (1 operations)</summary>
+
+- Post Identification result for a consent manager user ID
+
+</details>
+
+<details>
+<summary><b>Consent Flow</b> (4 operations)</summary>
+
+- Post Response to consent request
+- Post Result of consent request status
+- Post Consent notification
+- Post Result of fetch request for a consent artefact
+
+</details>
+
+<details>
+<summary><b>Data Flow</b> (2 operations)</summary>
+
+- Post Health information data request
+- Post health information transfer API
+
+</details>
+
+<details>
+<summary><b>Subscriptions</b> (3 operations)</summary>
+
+- Post Notification for subscription grant deny revoke
+- Post callback API for the subscription requests cm init to notify a HIU on acceptance acknowledgement of the request for subscription
+- Post Notification to HIU on basis of a granted subscription
+
+</details>
+
+<details>
+<summary><b>Monitoring</b> (1 operations)</summary>
+
+- Get consent request status
+
+</details>
+
+<details>
+<summary><b>Gateway</b> (17 operations)</summary>
+
+- Get openid configuration
+- Get certs for JWT verification
+- Post Create consent request
+- Post Get consent request status
+- Post Get consent artefact
+- Post Consent notification
+- Post Health information data request
+- Post Notifications corresponding to events during data flow
+- Post Identify a patient by her consent manager user ID
+- Post Get access token
+- Post Request for subscription
+- Post Callback API for subscription requests hiu notify to acknowledge receipt of notification
+- Post Callback API for subscriptions hiu notify to acknowledge receipt of notification
+- Post Confirmation request sending token otp or other authentication details from HIP HIU for confirmation
+- Post Get a patient s authentication modes relevant to specified purpose
+- Post Initialize authentication from HIP
+- Post callback API by HIU HIPs as acknowledgement of auth notification
+
+</details>
 
 ---
 

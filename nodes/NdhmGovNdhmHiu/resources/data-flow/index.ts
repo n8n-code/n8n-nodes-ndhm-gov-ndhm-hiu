@@ -15,8 +15,8 @@ export const dataFlowDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST V 0 5 Health Information Hiu On Request",
-					"value": "POST V 0 5 Health Information Hiu On Request",
+					"name": "POST v0 5 Health Information Hiu On Request",
+					"value": "POST v0 5 Health Information Hiu On Request",
 					"action": "Health information data request",
 					"description": "Callback API for acknowledgement of Health information request made by HIU. Gateway calls this API when request has validated for the specified  consent id. Either the **hiRequest** or **error** would be specified. If the health info request was valid, then the ***hiRequest.transactionId*** specifies the transaction context against which HIP would send over the data.  Possible cases of errors are\n  1. **Invalid consent artefact id**\n  2. **Consent has expired**\n  3. **Date ranges are invalid**\n",
 					"routing": {
@@ -27,8 +27,8 @@ export const dataFlowDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Health Information Transfer",
-					"value": "POST V 0 5 Health Information Transfer",
+					"name": "POST v0 5 Health Information Transfer",
+					"value": "POST v0 5 Health Information Transfer",
 					"action": "health information transfer API",
 					"description": "**NOTE**: This API is actually the callback URL that is passed as **dataPushUrl** in the data request API - /v0.5/health-information/hip/request. This API is directly called by HIP Data Bridge and is not mediated via CM, and hence not routed through the Gateway. \n  1. This API should be implemented at HIU side. It maybe implemented by the Data Bridge representing the HIU. \n  2. Entry elements maybe ***content*** or ***link***, although for version 1, entry ***content*** is preferred. \n  3. Entry ***content*** (or even link reference content) must be encrypted by means of Elliptic-curve Diffie–Hellman Key Exchange, utilizing the HIU keymaterials that are passed through the data request API - /v0.5/health-information/hip/request. \n  4. Media contains the mimetype of content, and for v1, it is \"application/fhir+json\"\n  5. checksum is Md5 checksum of the data conent, before encryption\n  6. Please refer to the NDHM Sandbox documentation for the format of FHIR bundle that is passed through content \n",
 					"routing": {
@@ -55,7 +55,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -80,7 +80,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -105,7 +105,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -129,7 +129,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -153,14 +153,14 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "a1s2c932-2f70-3ds3-a3b5-2sfd46b12a18d",
@@ -178,7 +178,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -203,7 +203,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -229,7 +229,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Hiu On Request"
+						"POST v0 5 Health Information Hiu On Request"
 					]
 				}
 			}
@@ -248,7 +248,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
@@ -273,7 +273,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
@@ -298,7 +298,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
@@ -323,7 +323,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
@@ -349,7 +349,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
@@ -375,14 +375,14 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Transaction Id",
+			"displayName": "Transaction ID",
 			"name": "transactionId",
 			"type": "string",
 			"default": "",
@@ -401,7 +401,7 @@ export const dataFlowDescription: INodeProperties[] = [
 						"Data Flow"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Transfer"
+						"POST v0 5 Health Information Transfer"
 					]
 				}
 			}

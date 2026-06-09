@@ -1,6 +1,6 @@
 {
   "name": "@n8n-dev/n8n-nodes-ndhm-gov-ndhm-hiu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Following are the specifications for the APIs to be implemented at the Health Repository end if an entity is only serving the role of a HIU. The specs are essentially duplicates from the Gatewa..",
   "license": "MIT",
   "homepage": "https://n8n-code.github.io/n8n-dev/#/n8n-nodes-ndhm-gov-ndhm-hiu",
@@ -11,7 +11,7 @@
     "n8n-community-node-package",
     "openapi",
     "swagger",
-    "api",
+    "API",
     "automation",
     "workflow",
     "ndhm-gov-ndhm-hiu"

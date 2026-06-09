@@ -15,8 +15,8 @@ export const consentFlowDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST V 0 5 Consent Requests On Init",
-					"value": "POST V 0 5 Consent Requests On Init",
+					"name": "POST v0 5 Consent Requests On Init",
+					"value": "POST v0 5 Consent Requests On Init",
 					"action": "Response to consent request",
 					"description": "Result of consent request creation for a patient. **id** represents the consentrequest id created by CM. The result must contain either **id** or the **error** caused. <br/>\n  Reasons for error may be\n  * Invalid references (e.g patient id, hiu id), purpose, hiTypes, ranges, persmission\n",
 					"routing": {
@@ -27,8 +27,8 @@ export const consentFlowDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consent Requests On Status",
-					"value": "POST V 0 5 Consent Requests On Status",
+					"name": "POST v0 5 Consent Requests On Status",
+					"value": "POST v0 5 Consent Requests On Status",
 					"action": "Result of consent request status",
 					"description": "Result of consent request done previously. Status of request can be GRANTED,  DENIED, EXPIRED. If the request was GRANTED, then \n",
 					"routing": {
@@ -39,8 +39,8 @@ export const consentFlowDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consents Hiu Notify",
-					"value": "POST V 0 5 Consents Hiu Notify",
+					"name": "POST v0 5 Consents Hiu Notify",
+					"value": "POST v0 5 Consents Hiu Notify",
 					"action": "Consent notification",
 					"description": "Health information user will get notified about the consent request granted or denied, consent revoked, consent expired. \n1. For consent request grant, status=GRANTED, consentRequestId=<consent-request-id>, and consentArtefacts is an array of generated consent artefact Ids.\n2. For consent request expiry, status=EXPIRED, consentRequestId=<consent-request-id>\n3. For consent request denied, status=DENIED, consentRequestId=<consent-request-id>\n4. For consent revocation, status=REVOKED, consentArtefacts is an array of revoked consent artefact ids\n",
 					"routing": {
@@ -51,8 +51,8 @@ export const consentFlowDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consents On Fetch",
-					"value": "POST V 0 5 Consents On Fetch",
+					"name": "POST v0 5 Consents On Fetch",
+					"value": "POST v0 5 Consents On Fetch",
 					"action": "Result of fetch request for a consent artefact",
 					"description": "Must contain either consent or error. Possible reason of errors are \n1. consentId passed through /fetch is invalid\n",
 					"routing": {
@@ -79,7 +79,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -104,7 +104,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -129,7 +129,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -153,7 +153,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -177,14 +177,14 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -203,7 +203,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -228,7 +228,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -254,7 +254,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Init"
+						"POST v0 5 Consent Requests On Init"
 					]
 				}
 			}
@@ -273,7 +273,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -298,7 +298,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -323,7 +323,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -347,7 +347,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -371,14 +371,14 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -397,7 +397,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -422,7 +422,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -448,7 +448,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests On Status"
+						"POST v0 5 Consent Requests On Status"
 					]
 				}
 			}
@@ -467,7 +467,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
@@ -492,7 +492,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
@@ -517,7 +517,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
@@ -542,14 +542,14 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -568,7 +568,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
@@ -594,7 +594,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu Notify"
+						"POST v0 5 Consents Hiu Notify"
 					]
 				}
 			}
@@ -613,7 +613,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -638,7 +638,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -663,7 +663,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -687,7 +687,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -711,14 +711,14 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -737,7 +737,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -762,7 +762,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}
@@ -788,7 +788,7 @@ export const consentFlowDescription: INodeProperties[] = [
 						"Consent Flow"
 					],
 					"operation": [
-						"POST V 0 5 Consents On Fetch"
+						"POST v0 5 Consents On Fetch"
 					]
 				}
 			}

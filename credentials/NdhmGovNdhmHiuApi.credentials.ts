@@ -8,7 +8,7 @@ import type {
 export class NdhmGovNdhmHiuApi implements ICredentialType {
 	name = 'N8nDevNdhmGovNdhmHiuApi';
 
-	displayName = 'ndhm-gov-ndhm-hiu API';
+	displayName = 'Ndhm Gov Ndhm Hiu API';
 
 	icon: Icon = { light: 'file:../nodes/NdhmGovNdhmHiu/ndhm-gov-ndhm-hiu.svg', dark: 'file:../nodes/NdhmGovNdhmHiu/ndhm-gov-ndhm-hiu.dark.svg' };
 
@@ -22,7 +22,7 @@ export class NdhmGovNdhmHiuApi implements ICredentialType {
 			default: 'https://dev.ndhm.gov.in/gateway',
 			required: true,
 			placeholder: 'https://dev.ndhm.gov.in/gateway',
-			description: 'The base URL of your ndhm-gov-ndhm-hiu API server',
+			description: 'The base URL of your Ndhm Gov Ndhm Hiu API server',
 		},
 		{
 			displayName: 'API Key',

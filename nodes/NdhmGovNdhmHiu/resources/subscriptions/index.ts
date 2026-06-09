@@ -15,8 +15,8 @@ export const subscriptionsDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST V 0 5 Subscription Requests Hiu Notify",
-					"value": "POST V 0 5 Subscription Requests Hiu Notify",
+					"name": "POST v0 5 Subscription Requests Hiu Notify",
+					"value": "POST v0 5 Subscription Requests Hiu Notify",
 					"action": "Notification for subscription grant/deny/revoke",
 					"description": "This API is used by CM to notify a HIU to grant or deny a request for subscription, and also to notify that in case an existing subscription is revoked or expired. For notifying that a particular subscription request was GRANTED or DENIED, the **subscriptionRequestId** is passed. \n",
 					"routing": {
@@ -27,8 +27,8 @@ export const subscriptionsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Subscription Requests Hiu On Init",
-					"value": "POST V 0 5 Subscription Requests Hiu On Init",
+					"name": "POST v0 5 Subscription Requests Hiu On Init",
+					"value": "POST v0 5 Subscription Requests Hiu On Init",
 					"action": "callback API for the /subscription-requests/cm/init to notify a HIU on acceptance/acknowledgement of the request for subscription.",
 					"description": "This callback API acknowledges the request for subscription from a HIU, and sends back a \"id\" that will be used when the patient/user approves or denies the subscription. \n",
 					"routing": {
@@ -39,8 +39,8 @@ export const subscriptionsDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Subscriptions Hiu Notify",
-					"value": "POST V 0 5 Subscriptions Hiu Notify",
+					"name": "POST v0 5 Subscriptions Hiu Notify",
+					"value": "POST v0 5 Subscriptions Hiu Notify",
 					"action": "Notification to HIU on basis of a granted subscription",
 					"description": "This API is used by CM to notify a HIU for notification relevant to subscription. Notifications are sent to subscribed HIUs whenever a new care-context is linked or new data is available on an existing linked care-context. \n1. if event.category = LINK, then only care-contexts are passed when new care-contexts are linked for patient. \n2. If event.category = DATA, then hiTypes are passed. Care-context is passed only if the subscribed HIU has any valid consent for that care-context\n",
 					"routing": {
@@ -67,7 +67,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
@@ -117,7 +117,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
@@ -142,14 +142,14 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -168,7 +168,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
@@ -194,7 +194,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu Notify"
+						"POST v0 5 Subscription Requests Hiu Notify"
 					]
 				}
 			}
@@ -213,7 +213,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -238,7 +238,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -263,7 +263,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -287,14 +287,14 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -313,7 +313,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -338,7 +338,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -362,7 +362,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -388,7 +388,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Init"
+						"POST v0 5 Subscription Requests Hiu On Init"
 					]
 				}
 			}
@@ -407,7 +407,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}
@@ -432,7 +432,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}
@@ -457,7 +457,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}
@@ -482,14 +482,14 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -508,7 +508,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}
@@ -534,7 +534,7 @@ export const subscriptionsDescription: INodeProperties[] = [
 						"Subscriptions"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu Notify"
+						"POST v0 5 Subscriptions Hiu Notify"
 					]
 				}
 			}

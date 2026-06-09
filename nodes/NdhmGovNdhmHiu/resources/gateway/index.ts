@@ -15,8 +15,8 @@ export const gatewayDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET V 0 5 Well Known Openid Configuration",
-					"value": "GET V 0 5 Well Known Openid Configuration",
+					"name": "GET v0 5 Well Known Openid Configuration",
+					"value": "GET v0 5 Well Known Openid Configuration",
 					"action": "Get openid configuration",
 					"description": "Get openid configuration",
 					"routing": {
@@ -27,8 +27,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "GET V 0 5 Certs",
-					"value": "GET V 0 5 Certs",
+					"name": "GET v0 5 Certs",
+					"value": "GET v0 5 Certs",
 					"action": "Get certs for JWT verification",
 					"description": "Get certs for JWT verification",
 					"routing": {
@@ -39,8 +39,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consent Requests Init",
-					"value": "POST V 0 5 Consent Requests Init",
+					"name": "POST v0 5 Consent Requests Init",
+					"value": "POST v0 5 Consent Requests Init",
 					"action": "Create consent request",
 					"description": "Creates a consent request to get data about a patient by HIU user.",
 					"routing": {
@@ -51,8 +51,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consent Requests Status",
-					"value": "POST V 0 5 Consent Requests Status",
+					"name": "POST v0 5 Consent Requests Status",
+					"value": "POST v0 5 Consent Requests Status",
 					"action": "Get consent request status",
 					"description": "Get status of consent request done previously",
 					"routing": {
@@ -63,8 +63,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consents Fetch",
-					"value": "POST V 0 5 Consents Fetch",
+					"name": "POST v0 5 Consents Fetch",
+					"value": "POST v0 5 Consents Fetch",
 					"action": "Get consent artefact",
 					"description": "Get consent artefact",
 					"routing": {
@@ -75,8 +75,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Consents Hiu On Notify",
-					"value": "POST V 0 5 Consents Hiu On Notify",
+					"name": "POST v0 5 Consents Hiu On Notify",
+					"value": "POST v0 5 Consents Hiu On Notify",
 					"action": "Consent notification",
 					"description": "This API is called by HIU as acknowledgement to consent notifications, specifically for cases when consent is REVOKED or EXPIRED.\n",
 					"routing": {
@@ -87,8 +87,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Health Information Cm Request",
-					"value": "POST V 0 5 Health Information Cm Request",
+					"name": "POST v0 5 Health Information Cm Request",
+					"value": "POST v0 5 Health Information Cm Request",
 					"action": "Health information data request",
 					"description": "Request for Health information against a consent id. CM would generate a transactionId against each consent and pass it as trnasaction context / correlation id to the HIP and also return the same to HIU via /on-request. \n",
 					"routing": {
@@ -99,8 +99,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Health Information Notify",
-					"value": "POST V 0 5 Health Information Notify",
+					"name": "POST v0 5 Health Information Notify",
+					"value": "POST v0 5 Health Information Notify",
 					"action": "Notifications corresponding to events during data flow",
 					"description": "API called by HIU and HIP during data-transfer.\n1. HIP on transfer of data would send **sessionStatus** - one of [TRANSFERRED, FAILED]\n2. HIP would also send **hiStatus** for each *careContextReference* - on of [DELIVERED, ERRORED]\n3. HIU on receipt of data would send **sessionStatus** - one of [TRANSFERRED, FAILED]. For example, FAILED when if data was not sent or if invalid data was sent\n4. HIU would also send **hiStatus** for each *careContextReference* - one of [OK, ERRORED]\n",
 					"routing": {
@@ -111,8 +111,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Patients Find",
-					"value": "POST V 0 5 Patients Find",
+					"name": "POST v0 5 Patients Find",
+					"value": "POST v0 5 Patients Find",
 					"action": "Identify a patient by her consent-manager user-id",
 					"description": "This API is meant for identify to patient given her consent-manager-user-id\n",
 					"routing": {
@@ -123,8 +123,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Sessions",
-					"value": "POST V 0 5 Sessions",
+					"name": "POST v0 5 Sessions",
+					"value": "POST v0 5 Sessions",
 					"action": "Get access token",
 					"description": "Get access token",
 					"routing": {
@@ -135,8 +135,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Subscription Requests Cm Init",
-					"value": "POST V 0 5 Subscription Requests Cm Init",
+					"name": "POST v0 5 Subscription Requests Cm Init",
+					"value": "POST v0 5 Subscription Requests Cm Init",
 					"action": "Request for subscription",
 					"description": "creates a request for subscription. The subscription categories can be for care-contexts linkages or availability of data against existing care-contexts. Note that the requester must have HIU role",
 					"routing": {
@@ -147,8 +147,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Subscription Requests Hiu On Notify",
-					"value": "POST V 0 5 Subscription Requests Hiu On Notify",
+					"name": "POST v0 5 Subscription Requests Hiu On Notify",
+					"value": "POST v0 5 Subscription Requests Hiu On Notify",
 					"action": "Callback API for /subscription-requests/hiu/notify to acknowledge receipt of notification.",
 					"description": "This API is called by HIU as acknowledgement to subscription request relevant notifications. \n",
 					"routing": {
@@ -159,8 +159,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Subscriptions Hiu On Notify",
-					"value": "POST V 0 5 Subscriptions Hiu On Notify",
+					"name": "POST v0 5 Subscriptions Hiu On Notify",
+					"value": "POST v0 5 Subscriptions Hiu On Notify",
 					"action": "Callback API for /subscriptions/hiu/notify to acknowledge receipt of notification.",
 					"description": "This API is called by HIU as acknowledgement to consent notifications, specifically for cases when consent is REVOKED or EXPIRED.\n",
 					"routing": {
@@ -171,8 +171,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Users Auth Confirm",
-					"value": "POST V 0 5 Users Auth Confirm",
+					"name": "POST v0 5 Users Auth Confirm",
+					"value": "POST v0 5 Users Auth Confirm",
 					"action": "Confirmation request sending token, otp or other authentication details from HIP/HIU for confirmation",
 					"description": "This API is called by HIP/HIUs to confirm authentication of users. The transactionId returned by the previous callback API /users/auth/on-init must be sent. If Authentication is successful the callback API will send an \"access token\" for subsequent purpose specific API calls. Note only **credential.authCode** or **credential.demographic** should be sent\n  1. demographic details are only required for  demographic auth as of now. \n  2. demographic details are required only in MEDIATED cases and if the **auth.mode** so demands. e.g. if **auth.mode** is DEMOGRAPHICS. Usually for demographic authentication, the name, gender and DOB must be exactly as specified in User Account.\n  3. demographic.identifier is optional, however maybe required if authentication so mandates. \n  4. credential.authCode is required for other MEDIATED authentication like MOBILE_OTP, AADHAAR_OTP. \n",
 					"routing": {
@@ -183,8 +183,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Users Auth Fetch Modes",
-					"value": "POST V 0 5 Users Auth Fetch Modes",
+					"name": "POST v0 5 Users Auth Fetch Modes",
+					"value": "POST v0 5 Users Auth Fetch Modes",
 					"action": "Get a patient's authentication modes relevant to specified purpose",
 					"description": "This API is meant for identify supported authentication modes for a patient given a specific purpose\n",
 					"routing": {
@@ -195,8 +195,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Users Auth Init",
-					"value": "POST V 0 5 Users Auth Init",
+					"name": "POST v0 5 Users Auth Init",
+					"value": "POST v0 5 Users Auth Init",
 					"action": "Initialize authentication from HIP",
 					"description": "This API is called by HIPs to initiate authentication of users. A transactionId is retuned by the corresponding callback API for confirmation of user auth.\n  1. **NOTE**, only **KYC** purpose is applicable for HIU. Hence HIU should only sent KYC in **query.authMode** in the request\n",
 					"routing": {
@@ -207,8 +207,8 @@ export const gatewayDescription: INodeProperties[] = [
 					}
 				},
 				{
-					"name": "POST V 0 5 Users Auth On Notify",
-					"value": "POST V 0 5 Users Auth On Notify",
+					"name": "POST v0 5 Users Auth On Notify",
+					"value": "POST v0 5 Users Auth On Notify",
 					"action": "callback API by HIU/HIPs as acknowledgement of auth notification",
 					"description": "This API is called by HIU/HIPs to confirm acknowledgement for receipt of auth notification is case of DIRECT authentication. \n",
 					"routing": {
@@ -235,7 +235,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"GET V 0 5 Well Known Openid Configuration"
+						"GET v0 5 Well Known Openid Configuration"
 					]
 				}
 			}
@@ -254,7 +254,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"GET V 0 5 Certs"
+						"GET v0 5 Certs"
 					]
 				}
 			}
@@ -273,7 +273,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
@@ -298,7 +298,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
@@ -323,7 +323,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
@@ -348,14 +348,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "499a5a4a-7dda-4f20-9b67-e24589627061",
@@ -374,7 +374,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
@@ -400,7 +400,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Init"
+						"POST v0 5 Consent Requests Init"
 					]
 				}
 			}
@@ -419,7 +419,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
@@ -444,7 +444,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
@@ -469,14 +469,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Consent Request Id",
+			"displayName": "Consent Request ID",
 			"name": "consentRequestId",
 			"type": "string",
 			"default": "",
@@ -494,14 +494,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -520,7 +520,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
@@ -546,7 +546,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consent Requests Status"
+						"POST v0 5 Consent Requests Status"
 					]
 				}
 			}
@@ -565,7 +565,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
@@ -590,7 +590,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
@@ -615,14 +615,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Consent Id",
+			"displayName": "Consent ID",
 			"name": "consentId",
 			"type": "string",
 			"default": "",
@@ -640,14 +640,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -666,7 +666,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
@@ -692,7 +692,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Fetch"
+						"POST v0 5 Consents Fetch"
 					]
 				}
 			}
@@ -711,7 +711,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -736,7 +736,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -761,7 +761,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -785,7 +785,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -809,14 +809,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -835,7 +835,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -860,7 +860,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -886,7 +886,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Consents Hiu On Notify"
+						"POST v0 5 Consents Hiu On Notify"
 					]
 				}
 			}
@@ -905,7 +905,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
@@ -930,7 +930,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
@@ -955,7 +955,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
@@ -980,14 +980,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "a1s2c932-2f70-3ds3-a3b5-2sfd46b12a18d",
@@ -1005,7 +1005,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
@@ -1031,7 +1031,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Cm Request"
+						"POST v0 5 Health Information Cm Request"
 					]
 				}
 			}
@@ -1050,7 +1050,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
@@ -1075,7 +1075,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
@@ -1100,7 +1100,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
@@ -1125,14 +1125,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "499a5a4a-7dda-4f20-9b67-e24589627061",
@@ -1151,7 +1151,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
@@ -1177,7 +1177,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Health Information Notify"
+						"POST v0 5 Health Information Notify"
 					]
 				}
 			}
@@ -1196,7 +1196,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
@@ -1221,7 +1221,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
@@ -1246,7 +1246,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
@@ -1271,14 +1271,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -1297,7 +1297,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
@@ -1323,7 +1323,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Patients Find"
+						"POST v0 5 Patients Find"
 					]
 				}
 			}
@@ -1342,14 +1342,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Sessions"
+						"POST v0 5 Sessions"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Client Id",
+			"displayName": "Client ID",
 			"name": "clientId",
 			"type": "string",
 			"default": "",
@@ -1367,7 +1367,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Sessions"
+						"POST v0 5 Sessions"
 					]
 				}
 			}
@@ -1392,7 +1392,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Sessions"
+						"POST v0 5 Sessions"
 					]
 				}
 			}
@@ -1411,7 +1411,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
@@ -1436,7 +1436,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
@@ -1461,14 +1461,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "499a5a4a-7dda-4f20-9b67-e24589627061",
@@ -1487,7 +1487,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
@@ -1512,7 +1512,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
@@ -1538,7 +1538,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Cm Init"
+						"POST v0 5 Subscription Requests Cm Init"
 					]
 				}
 			}
@@ -1557,7 +1557,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1582,7 +1582,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1607,7 +1607,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1631,7 +1631,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1655,14 +1655,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -1681,7 +1681,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1706,7 +1706,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1732,7 +1732,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscription Requests Hiu On Notify"
+						"POST v0 5 Subscription Requests Hiu On Notify"
 					]
 				}
 			}
@@ -1751,7 +1751,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1776,7 +1776,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1801,7 +1801,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1825,7 +1825,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1849,14 +1849,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -1875,7 +1875,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1900,7 +1900,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1926,7 +1926,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Subscriptions Hiu On Notify"
+						"POST v0 5 Subscriptions Hiu On Notify"
 					]
 				}
 			}
@@ -1945,7 +1945,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
@@ -1970,7 +1970,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
@@ -1995,7 +1995,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
@@ -2021,14 +2021,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -2047,7 +2047,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
@@ -2073,14 +2073,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Transaction Id",
+			"displayName": "Transaction ID",
 			"name": "transactionId",
 			"type": "string",
 			"default": "",
@@ -2098,7 +2098,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Confirm"
+						"POST v0 5 Users Auth Confirm"
 					]
 				}
 			}
@@ -2117,7 +2117,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
@@ -2142,7 +2142,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
@@ -2167,7 +2167,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
@@ -2192,14 +2192,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -2218,7 +2218,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
@@ -2244,7 +2244,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Fetch Modes"
+						"POST v0 5 Users Auth Fetch Modes"
 					]
 				}
 			}
@@ -2263,7 +2263,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
@@ -2288,7 +2288,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
@@ -2313,7 +2313,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
@@ -2338,14 +2338,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -2364,7 +2364,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
@@ -2390,7 +2390,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth Init"
+						"POST v0 5 Users Auth Init"
 					]
 				}
 			}
@@ -2409,7 +2409,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2434,7 +2434,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2459,7 +2459,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2483,7 +2483,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2507,14 +2507,14 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -2533,7 +2533,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2558,7 +2558,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}
@@ -2584,7 +2584,7 @@ export const gatewayDescription: INodeProperties[] = [
 						"Gateway"
 					],
 					"operation": [
-						"POST V 0 5 Users Auth On Notify"
+						"POST v0 5 Users Auth On Notify"
 					]
 				}
 			}

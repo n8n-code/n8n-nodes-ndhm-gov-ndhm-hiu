@@ -15,8 +15,8 @@ export const identificationDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "POST V 0 5 Patients On Find",
-					"value": "POST V 0 5 Patients On Find",
+					"name": "POST v0 5 Patients On Find",
+					"value": "POST v0 5 Patients On Find",
 					"action": "Identification result for a consent-manager user-id",
 					"description": "If a patient is found then patient.name contains the patients name. \nOtherwise, patient is not provided, and possibly error is raised for invalid requests\nNote in addition to the \"Authorization\" header, one of the following headers must be specified\n1. specify **X-HIU-ID** if the requester is HIU (identified from /find requester.id)\n2. specify **X-HIP-ID** if the requester is HIP (identified from /find requester.id)\n",
 					"routing": {
@@ -43,7 +43,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
@@ -68,7 +68,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
@@ -92,7 +92,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
@@ -116,14 +116,14 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
 		},
 		{
 			"required": true,
-			"displayName": "Request Id",
+			"displayName": "Request ID",
 			"name": "requestId",
 			"type": "string",
 			"default": "5f7a535d-a3fd-416b-b069-c97d021fbacd",
@@ -142,7 +142,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
@@ -167,7 +167,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}
@@ -193,7 +193,7 @@ export const identificationDescription: INodeProperties[] = [
 						"Identification"
 					],
 					"operation": [
-						"POST V 0 5 Patients On Find"
+						"POST v0 5 Patients On Find"
 					]
 				}
 			}

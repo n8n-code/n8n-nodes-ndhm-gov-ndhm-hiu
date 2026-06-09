@@ -15,8 +15,8 @@ export const monitoringDescription: INodeProperties[] = [
 			},
 			"options": [
 				{
-					"name": "GET V 0 5 Heartbeat",
-					"value": "GET V 0 5 Heartbeat",
+					"name": "GET v0 5 Heartbeat",
+					"value": "GET v0 5 Heartbeat",
 					"action": "Get consent request status",
 					"description": "Get consent request status",
 					"routing": {
@@ -43,7 +43,7 @@ export const monitoringDescription: INodeProperties[] = [
 						"Monitoring"
 					],
 					"operation": [
-						"GET V 0 5 Heartbeat"
+						"GET v0 5 Heartbeat"
 					]
 				}
 			}

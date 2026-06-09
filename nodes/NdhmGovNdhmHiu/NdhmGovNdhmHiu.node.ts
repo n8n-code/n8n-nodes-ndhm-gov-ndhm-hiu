@@ -9,14 +9,14 @@ import { gatewayDescription } from './resources/gateway';
 
 export class NdhmGovNdhmHiu implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'ndhm-gov-ndhm-hiu',
+		displayName: 'Ndhm Gov Ndhm Hiu',
 		name: 'N8nDevNdhmGovNdhmHiu',
 		icon: { light: 'file:./ndhm-gov-ndhm-hiu.svg', dark: 'file:./ndhm-gov-ndhm-hiu.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'Following are the specifications for the APIs to be implemented at the Health Repository end if an entity is only serving the role of a HIU. The specs are essentially duplicates from the Gatewa..',
-		defaults: { name: 'ndhm-gov-ndhm-hiu' },
+		defaults: { name: 'Ndhm Gov Ndhm Hiu' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
